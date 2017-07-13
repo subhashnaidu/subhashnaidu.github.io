@@ -1,0 +1,59 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/paper-ripple/paper-ripple.html">
+
+
+<dom-module id="my-view2">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: -ms-grid;
+        text-align: center;
+        position: center;
+        size: 100,100;
+      }
+
+      paper-ripple {
+        color: #80cbc4;
+      }
+
+    </style>
+
+    <div class="title">
+      <h1>About Me</h1>
+    </div>
+
+    <div class="card">
+      <img src="../src/me_2.PNG" data-id="Me">
+      <p><b>Designed in America, Made in India.</b></p>
+    </div>
+
+    <div class="card" size="100,100">
+      <p text-align="left">I set foot in California when i was 7, arriving at a completetly different world then the one I was previously used to.
+       Maybe it was the Silicon in the air or something, but i became facinated with computers at a young age, I remember the colorful plastic imacs,
+       I used in elementary school. Fast forward 13 years later, I've been in Florida for the past 12 years, going to UCF for a Computer Science Degree.
+      </p>
+      <p> Now my intrests have grown, to more complex things such as Computer Vision, Machine Learning, Data Science and Computer Security. I am currently in
+      the process of learning Google's TensorFlow API's and new languages like Swift and GoLang in addition to the standerd C and Java. I plan on slowly building my
+      portfolio with a variety of things that I am working on, not just limited to programming and code. I also have passions in Photography and Music production, so expect anything.
+      </p>
+    </div>
+
+  </template>
+
+  <script>
+    class MyView2 extends Polymer.Element {
+      static get is() { return 'my-view2'; }
+    }
+
+    window.customElements.define(MyView2.is, MyView2);
+  </script>
+</dom-module>

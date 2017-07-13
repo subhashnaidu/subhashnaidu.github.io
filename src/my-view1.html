@@ -1,0 +1,52 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: -ms-grid;
+        text-align: center;
+        position: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    </style>
+
+      <h2>Portfolio</h2>
+
+    <div class="card">
+      <h2>Vigenere with Cipher Block Chaining</h2>
+      <p>The program reads in a block of text, and encrypts the data using the Vigenere cipher under the Block Chaining mode of operation.
+        The user must also provide a password key and initalization vectors as command line arguments.
+      </p>
+      <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Link to Code on Github </a>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title">This Website</h2>
+      <img src="../src/p-logo.png" data-id="Polymer">
+      <p class="card-text">This website was created by me using Google's Polymer Components, which are part of their Material UI language. This responsive website seamlessly transitions based on the device your using.
+       Try it by resizing the browser window to create a narrow rectangel much like a phone screen, and watch the website adapt.
+    </p></div>
+
+
+
+  </template>
+
+  <script>
+    class MyView1 extends Polymer.Element {
+      static get is() { return 'my-view1'; }
+    }
+
+    window.customElements.define(MyView1.is, MyView1);
+  </script>
+</dom-module>
