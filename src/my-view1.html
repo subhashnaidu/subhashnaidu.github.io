@@ -13,15 +13,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style include="shared-styles">
       :host {
-        display: -ms-grid;
         text-align: center;
         position: center;
         font-family: Arial, Helvetica, sans-serif;
+        display: list-item;
       }
 
-    </style>
+      img {
+          max-width: 100%;
+          height: auto;
+          width: auto; /* ie8 */
+      }
 
-      <h2>Portfolio</h2>
+
+
+    </style>
 
     <div class="card">
       <h2>Vigenere with Cipher Block Chaining</h2>
