@@ -1,7 +1,7 @@
 {
   "name": "polymer-starter-kit",
   "authors": [
-    "The Polymer Authors"
+    "Subhash Naidu"
   ],
   "license": "https://polymer.github.io/LICENSE.txt",
   "dependencies": {
@@ -22,5 +22,14 @@
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^6.0.0-prerelease.7"
   },
-  "private": true
+  "homepage": "https://github.com/subhashnaidu/subhashnaidu.github.io",
+  "description": "personal website",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
