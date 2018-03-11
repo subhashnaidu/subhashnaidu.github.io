@@ -33,14 +33,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style>
       :host {
-        --app-primary-color: rgb(232, 82, 82)  ;
-        --app-secondary-color: black;
+        --app-primary-color: #DB5461  ;
+        --app-secondary-color: #3D5467;
 
         display: block;
-      }
+      } 
 
       paper-ripple {
-        color: rgb(245, 192, 192);
+        color: #8AA29E;
       }
 
       app-drawer-layout:not([narrow]) [drawer-toggle] {
@@ -69,7 +69,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       .drawer-list a.iron-selected {
         color: black;
-        background-color: rgb(235, 134, 136);
+        background-color: #F1EDEE;
         background-blend-mode: color;
         font-weight:400;
         font-family: sans-serif;
@@ -90,19 +90,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <app-drawer-layout fullbleed="">
       <!-- Drawer content -->
-      <app-drawer id="drawer" slot="drawer" background-color="#263238">
+      <app-drawer id="drawer" slot="drawer">
+        <app-toolbar> <b>Menu</b> </app-toolbar>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-          <a name="view1" href="view1">Portfolio</a>
-          <a name="view4" href="view4">Resume</a>
-          <a name="view2" href="view2">About Me</a>
-          <a name="view3" href="view3">Contact Me</a>
+          <a name="view1" href="view1" style="text-decoration: none">Portfolio</a>
+          <a name="view4" href="view4" style="text-decoration: none">Resume</a>
+          <a name="view2" href="view2" style="text-decoration: none">About Me</a>
+          <a name="view3" href="view3" style="text-decoration: none">Contact Me</a>
         </iron-selector>
         <paper-ripple></paper-ripple>
       </app-drawer>
 
       <!-- Main content -->
-      <app-header-layout has-scrolling-region="">
-        <app-header slot="header" style="height: 70px" condenses="" fixed="" reveals="" effects="cover">
+      <app-header-layout has-scrolling-region="true">
+        <app-header slot="header" style="height: 70px" condenses="true" fixed="" reveals="" effects="cover">
           <app-toolbar style="height: 70px">
             <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
             <main-title>Subhash Naidu</main-title>
