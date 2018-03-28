@@ -6,8 +6,10 @@ The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
 The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
---><link rel="import" href="../bower_components/polymer/polymer-element.html">
+-->
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
+
 
 <dom-module id="my-view1">
   <template>
@@ -28,54 +30,93 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       /* paper-ripple {
         color: rgb(174, 63, 65);
       } */
-
     </style>
 
-    <div class="card">
-      <img src="../src/rumi-logo.png" data-id="Rumi Logo">
-      <p>
-        Rumi is an app that lets users record and split individual items with their roomates. It features
-        integration with venmo, and allows users to easily send and request payments directly in the app, letting
-        roommates, partners or friends split things that they bought.
-        <p><i>Product still in development</i></p>
-      </p>
-      
-    </div>
+    <style is="custom-style" include="shared-styles">
+      .tilt {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* background-color: #08AEEA; */
+        /* background-image: linear-gradient(to top, #08AEEA 0%, #2AF598 100%); */
+        transform-style: preserve-3d;
+      }
+      .tilt-inner {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        color: black;
+        font-size: 20px;
+        transform: translateZ(50px) translateY(-50%) translateX(-50%);
+      }
+    </style>
 
-    <div class="card">
-      <!-- <paper-ripple></paper-ripple> -->
-      <h2>Personal Contact Manager</h2>
-      <img src="../src/m2.png" data-id="Mean Stack">
-      <p> A personal contact manager application built by me and my peers as part of a group project. It includes basic functionality such as add, delete, and search
-          including user registration and login. I was responsible for some frontend UI using Angular2 as well as some backend setup using MongoDB. We decided to use the 
-          MEAN stack which inolves, Mongodb, Express, Angular and Node.
-      </p>
-      <a href="https://personal-contact-manager.herokuapp.com/"> Live Project Website</a>
-      <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Link to Code on Github </a>
-    </div>
+    <!-- <polymer-tilt reset>
+      <div class="card">
+        <p>Hello this is a test card!</p>
+      </div>
+    </polymer-tilt> -->
 
-    <div class="card">
-      <!-- <paper-ripple></paper-ripple> -->
-      <h2>Vigenere with Cipher Block Chaining</h2>
-      <p>The program reads in a block of text, and encrypts the data using the
-         Vigenere cipher under the Block Chaining mode of operation.
-        The user must also provide a password/salt key and initalization vectors as command line arguments, for the program to work.
-      </p>
-      <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Link to Project on Github </a>
-    </div>
+    <polymer-tilt reset>
+      <div slot="tilt" class="tilt">
+        <div class="card">
+          <img src="../src/rumi-logo.png" data-id="Rumi Logo">
+          <p>
+            Rumi is an app that lets users record and split individual items with their roomates. It features
+            integration with venmo, and allows users to easily send and request payments directly in the app, letting
+            roommates, partners or friends split things that they bought.
+            <p><i>Product still in development</i></p>
+          </p>
+        </div>
+      </div>
+    </polymer-tilt>
 
-    <div class="card">
-      <!-- <paper-ripple></paper-ripple> -->
-      <h2 class="card-title">Polymer Website</h2>
-      <img src="../src/p-logo.png" data-id="Polymer">
-      <p class="card-text">This website was created using Google's Polymer Web Components,
-         which are a part of Google's Material UI design language. This responsive website seamlessly
-         transitions between mobile and desktop views. Try it by resizing the
-         browser window to create a narrow rectangle much like a phone screen, or
-         visit the website on a phone and watch the website adapt. Google has made great advancements in trying
-         to create a first class web experience on android, by allowing website to be treated as apps in regards to the
-         operating system. They also brought some of their technology from mobile to the web.
-    </p></div>
+    <polymer-tilt reset>
+      <div slot="tilt" class="tilt">
+        <div class="card">
+          <!-- <paper-ripple></paper-ripple> -->
+          <h2>Personal Contact Manager</h2>
+          <img src="../src/m2.png" data-id="Mean Stack">
+          <p> A personal contact manager application built by me and my peers as part of a group project. It includes basic functionality such as add, delete, and search
+              including user registration and login. I was responsible for some frontend UI using Angular2 as well as some backend setup using MongoDB. We decided to use the 
+              MEAN stack which inolves, Mongodb, Express, Angular and Node.
+          </p>
+          <a href="https://personal-contact-manager.herokuapp.com/"> Live Project Website</a>
+          <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Link to Code on Github </a>
+        </div>
+      </div>
+    </polymer-tilt>    
+
+    <polymer-tilt reset>
+      <div slot="tilt" class="tilt">
+        <div class="card">
+          <h2>Vigenere with Cipher Block Chaining</h2>
+          <p>The program reads in a block of text, and encrypts the data using the
+            Vigenere cipher under the Block Chaining mode of operation.
+            The user must also provide a password/salt key and initalization vectors as command line arguments, for the program to work.
+          </p>
+          <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Link to Project on Github </a>
+        </div>
+      </div>
+    </polymer-tilt>
+
+
+    <polymer-tilt reset>
+      <div slot="tilt" class="tilt">
+        <div class="card">
+          <h2 class="card-title">Polymer Website</h2>
+          <img src="../src/p-logo.png" data-id="Polymer">
+          <p class="card-text">This website was created using Google's Polymer Web Components,
+            which are a part of Google's Material UI design language. This responsive website seamlessly
+            transitions between mobile and desktop views. Try it by resizing the
+            browser window to create a narrow rectangle much like a phone screen, or
+            visit the website on a phone and watch the website adapt. Google has made great advancements in trying
+            to create a first class web experience on android, by allowing website to be treated as apps in regards to the
+            operating system. They also brought some of their technology from mobile to the web.
+        </p></div>
+      </div>
+    </polymer-tilt>
 
 
 
@@ -87,4 +128,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     window.customElements.define(MyView1.is, MyView1);
   </script>
+
+  <script>
+      suite('polymer-tilt', function() {
+        test('instantiating the element with default properties works', function() {
+          var element = fixture('BasicTestFixture');
+          assert.equal(element.prop1, 'polymer-tilt');
+          var elementShadowRoot = element.shadowRoot;
+          var elementHeader = elementShadowRoot.querySelector('h2');
+          assert.equal(elementHeader.innerHTML, 'Hello polymer-tilt!');
+        });
+        test('setting a property on the element works', function() {
+          // Create a test fixture
+          var element = fixture('ChangedPropertyTestFixture');
+          assert.equal(element.prop1, 'new-prop1');
+          var elementShadowRoot = element.shadowRoot;
+          var elementHeader = elementShadowRoot.querySelector('h2');
+          assert.equal(elementHeader.innerHTML, 'Hello new-prop1!');
+        });
+      });
+    </script>
+
 </dom-module>
