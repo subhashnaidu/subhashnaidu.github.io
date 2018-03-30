@@ -80,7 +80,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       main-title{
-        font-size: 50px;
+        font-size: 40px;
         font-family:'Courier New', Courier, monospace;
         font-weight:lighter;
         font-size-adjust: auto;
@@ -94,7 +94,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app-drawer{
         background-color: #070707;
       }
-      
+
     </style>
 
     <app-location route="{{route}}"></app-location>
@@ -123,8 +123,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </app-header>
 
         <iron-pages selected="[[page]]" attr-for-selected="name" fallback-selection="view404" role="main">
-          <my-view1 name="view1"></my-view1>
           <my-view2 name="view2"></my-view2>
+          <my-view1 name="view1"></my-view1>
           <my-view3 name="view3"></my-view3>
           <my-view4 name="view4"></my-view4>
           <my-view404 name="view404"></my-view404>
@@ -174,7 +174,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         // If no page was found in the route data, page will be an empty string.
         // Deault to 'view1' in that case.
-        this.page = page || 'view1';
+        this.page = page || 'view2';
 
         // Close a non-persistent drawer when the page & route are changed.
         if (!this.$.drawer.persistent) {
