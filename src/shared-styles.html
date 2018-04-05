@@ -6,17 +6,19 @@ The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
 The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
---><link rel="import" href="../bower_components/polymer/polymer-element.html">
+-->
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link href="https://fonts.googleapis.com/css?family=Lato|Scope+One" rel="stylesheet">
 
 <!-- shared styles for all views -->
 <dom-module id="shared-styles">
   <template>
     <style>
       .card {
-        margin: 5px;
-        padding: 40px;
+        margin: 30px;
+        padding: 60px;
         color: #757575;
-        border-radius: 5px;
+        border-radius: 20px;
         background-color: #ffffff;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
       }
@@ -34,15 +36,47 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       h1 {
+        font-family: 'Scope One', serif;
         margin: 16px 0;
         color: #212121;
         font-size: 22px;
       }
 
+      h2 {
+        font-family: 'Scope One', serif;
+        margin: 16px 0;
+        color: #212121;
+        font-size: 40px;
+      }
+
       p{
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Lato', sans-serif;
+        /* font-family: 'Courier New', Courier, monospace; */
         font-size: 20px;
       }
-    </style>
+
+      /* .tilt {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        perspective: 5000;
+        /* background-color: rgb(106, 192, 223); */
+        /* background-image: linear-gradient(to top, rgb(141, 220, 249) 0%, rgb(152, 235, 198) 100%); */
+        transform-style: preserve-3d;
+      }
+      .tilt-inner {
+        position: relative;
+        perspective-origin: 1000;
+        top: 50%;
+        left: 50%;
+        color: black;
+        font-size: 20px;
+        transform: translateZ(50px) translateY(-50%) translateX(-50%);
+      }
+    </style> */
+
+
+
   </template>
 </dom-module>

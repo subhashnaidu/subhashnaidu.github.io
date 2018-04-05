@@ -66,7 +66,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         line-height: 70px;
         font-size: 30px;
         font-weight: lighter;
-        font-family:'Courier New', Courier, monospace;
+        font-family: 'Scope One', serif;
+        /* font-family:'Courier New', Courier, monospace; */
         font-weight: normal;
       }
 
@@ -76,19 +77,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         background-blend-mode: color;
         font-size: 30px;
         font-weight: bold;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Scope One', serif;
+        /* font-family: 'Courier New', Courier, monospace; */
       }
 
       main-title{
-        font-size: 40px;
-        font-family:'Courier New', Courier, monospace;
+        font-size: 50px;
+        font-family: 'Scope One', serif;
         font-weight:lighter;
         font-size-adjust: auto;
       }
 
       b{
         font-size: 50px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Lato', sans-serif;
       }
       
       app-drawer{
@@ -103,7 +105,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <app-drawer-layout fullbleed="">
       <!-- Drawer content -->
       <app-drawer id="drawer" slot="drawer">
-        <app-toolbar style="height: 100px"><b></b></app-toolbar>
+        <!-- <app-toolbar style="height: 100px"><b></b></app-toolbar> -->
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="view1" href="view1" style="text-decoration: none">Portfolio</a>
           <a name="view4" href="view4" style="text-decoration: none">Resume</a>
