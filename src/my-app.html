@@ -45,6 +45,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       app-drawer-layout:not([narrow]) [drawer-toggle] {
+        text-align: center;
         display: none;
       }
 
@@ -62,21 +63,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .drawer-list a {
         display: flex;
         padding: 0 30px;
-
+        text-align: center;
         line-height: 70px;
         font-size: 30px;
-        font-weight: lighter;
+        font-weight: 200;
         font-family: 'Scope One', serif;
+        color: black;
         /* font-family:'Courier New', Courier, monospace; */
         font-weight: normal;
       }
 
       .drawer-list a.iron-selected {
         color: black;
-        background-color: #F1EDEE;
+        background-color: rgb(255, 255, 255);
         background-blend-mode: color;
-        font-size: 30px;
-        font-weight: bold;
+        font-size: 35px;
+        font-weight:900;
+        text-align: center;
         font-family: 'Scope One', serif;
         /* font-family: 'Courier New', Courier, monospace; */
       }
@@ -84,8 +87,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       main-title{
         font-size: 50px;
         font-family: 'Scope One', serif;
-        font-weight:lighter;
         font-size-adjust: auto;
+        text-align: center;
       }
 
       b{
@@ -116,9 +119,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </app-drawer>
 
       <!-- Main content -->
-      <app-header-layout has-scrolling-region="true">
-        <app-header slot="header" style="height: 100px" condenses="true" fixed="" reveals="" effects="waterfall">
-          <app-toolbar style="height: 100px">
+      <app-header-layout has-scrolling-region="false">
+        <app-header slot="header" style="height: 70px" condenses="true" fixed="false" reveals="true" effects="waterfall">
+          <app-toolbar style="height: 70px">
             <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
             <main-title>Subhash Naidu</main-title>
           </app-toolbar>

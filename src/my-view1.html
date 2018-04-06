@@ -34,40 +34,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           display: block;
           width: 100%;
           height: 100%;
-          perspective: number = 1000;
           /* background-color: rgb(106, 192, 223); */
           /* background-image: linear-gradient(to top, rgb(141, 220, 249) 0%, rgb(152, 235, 198) 100%); */
           transform-style: preserve-3d;
         }
-        .tilt-inner {
-          position: relative;
-          perspective-origin: 1000;
+        .tilt-inner 
+        {
+          position: absolute;
           top: 50%;
           left: 50%;
-          color: black;
+          color: white;
           font-size: 20px;
           transform: translateZ(50px) translateY(-50%) translateX(-50%);
         }
-      </style>
 
-    <polymer-tilt reset>
-      <div slot="tilt" class="tilt">
-        <div class="card">
-          <h2>Rumi</h2>
-          <div class="card">
-            <img src="../src/rumi-logo.png" data-id="Rumi Logo">
-            <p></p>
-            <img src="../src/dashboard.png">
-          </div>
-          <p>
-            Rumi is an app that lets users record and split individual items with their roomates. By leveraging Google's OCR libary the app has the ability
-            to scan recipts. It features integration with venmo, and allows users to easily send and request payments directly in the app, letting
-            roommates, partners or friends split things that they bought.
-            <p><i>Product still in development</i></p>
-          </p>
-        </div>
-      </div>
-    </polymer-tilt>
+        polymer-tilt
+        {
+          perspective: 1000;
+          /* background-color: #ffffff; */
+        }
+      </style>
 
     <polymer-tilt reset>
       <div slot="tilt" class="tilt">
@@ -75,15 +61,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <!-- <paper-ripple></paper-ripple> -->
           <h2>Personal Contact Manager</h2>
           <div class="card"><img src="../src/m2.png" data-id="Mean Stack"></div>
-          <p> A personal contact manager application built by me and my peers as part of a group project. It includes basic functionality such as add, delete, and search
-              including user registration and login. I was responsible for some frontend UI using Angular2 as well as some backend setup using MongoDB. We decided to use the 
-              MEAN stack which inolves, Mongodb, Express, Angular and Node.
+          <p> A personal contact manager application built by me and my peers using the MEAN stack as part of a group project. It includes basic functionality such as add, delete, and search
+              as well as user registration and login. I was responsible for frontend UI using Angular2 as well as some backend database setup using MongoDB.
           </p>
           <a href="https://personal-contact-manager.herokuapp.com/"> Play with me!</a>
           <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Link to project on Github </a>
         </div>
       </div>
     </polymer-tilt>    
+
+    <polymer-tilt reset>
+        <div slot="tilt" class="tilt">
+          <div class="card">
+            <h2>Rumi</h2>
+            <img src="../src/rumi-logo.png" data-id="Rumi Logo">
+            <div class="card">
+              <p></p>
+              <img src="../src/dashboard.png">
+            </div>
+            <p>
+              Rumi is an app that lets users record and split individual items with their roomates. By leveraging Google's OCR libary the app has the ability
+              to scan recipts. It features integration with venmo, and allows users to easily send and request payments directly in the app, letting
+              roommates, partners or friends split things that they bought.
+              <p><i>Product in development</i></p>
+            </p>
+          </div>
+        </div>
+      </polymer-tilt>
 
     <polymer-tilt reset>
       <div slot="tilt" class="tilt">
@@ -93,7 +97,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             Vigenere cipher under the Block Chaining mode of operation.
             The user must also provide a password/salt key and initalization vectors as command line arguments, for the program to work.
           </p>
-          <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Link to Project on Github </a>
+          <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Link to project on Github </a>
         </div>
       </div>
     </polymer-tilt>
@@ -104,8 +108,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="card">
           <h2 class="card-title">Polymer Website</h2>
           <div class="card"><img src="../src/p-logo.png" data-id="Polymer"></div>
-          <p class="card-text">This website was created using Google's Polymer Web Components,
-            which are a part of Google's Material UI design language. This responsive website seamlessly
+          <p class="card-text">This website was created using a combination of 
+            Google's Polymer Framework and Web Components. This website seamlessly
             transitions between mobile and desktop views. Try it by resizing the
             browser window to create a narrow rectangle much like a phone screen, or
             visit the website on a phone and watch the website adapt.
