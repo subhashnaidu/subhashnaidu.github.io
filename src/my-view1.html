@@ -26,118 +26,76 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           height: auto;
           width: auto; /* ie8 */
       }
+
     </style>
 
-    <style is="custom-style" include="shared-styles">
-        .tilt {
-          position: relative;
-          display: block;
-          width: 100%;
-          height: 100%;
-          /* background-color: rgb(106, 192, 223); */
-          /* background-image: linear-gradient(to top, rgb(141, 220, 249) 0%, rgb(152, 235, 198) 100%); */
-          transform-style: preserve-3d;
-        }
-        .tilt-inner 
-        {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          color: white;
-          font-size: 20px;
-          transform: translateZ(50px) translateY(-50%) translateX(-50%);
-        }
-
-        polymer-tilt
-        {
-          perspective: 1000;
-          /* background-color: #ffffff; */
-        }
-      </style>
-
-    <polymer-tilt reset>
-      <div slot="tilt" class="tilt">
-        <div class="card">
-          <!-- <paper-ripple></paper-ripple> -->
-          <h2>Personal Contact Manager</h2>
-          <div class="card"><img src="../src/m2.png" data-id="Mean Stack"></div>
-          <p> A personal contact manager application built by me and my peers using the MEAN stack as part of a group project. It includes basic functionality such as add, delete, and search
-              as well as user registration and login. I was responsible for frontend UI using Angular2 as well as some backend database setup using MongoDB.
-          </p>
-          <a href="https://personal-contact-manager.herokuapp.com/"> Play with me!</a>
-          <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Link to project on Github </a>
-        </div>
+    <div class="card">
+      <h2>Rumi</h2>
+      <div class="card">
+        <p></p>
+        <img src="../src/dashboard.png">
       </div>
-    </polymer-tilt>    
+      <p>
+        Rumi is an app that lets users record and split individual items with their roomates. By leveraging Google's OCR libary the app has the ability
+        to scan recipts. It features integration with venmo, and allows users to easily send and request payments directly in the app, letting
+        roommates, partners or friends split things that they bought.
+      </p>
 
-    <polymer-tilt reset>
-        <div slot="tilt" class="tilt">
-          <div class="card">
-            <h2>Rumi</h2>
-            <img src="../src/rumi-logo.png" data-id="Rumi Logo">
-            <div class="card">
-              <p></p>
-              <img src="../src/dashboard.png">
-            </div>
-            <p>
-              Rumi is an app that lets users record and split individual items with their roomates. By leveraging Google's OCR libary the app has the ability
-              to scan recipts. It features integration with venmo, and allows users to easily send and request payments directly in the app, letting
-              roommates, partners or friends split things that they bought.
-              <p><i>Product in development</i></p>
-            </p>
-          </div>
-        </div>
-      </polymer-tilt>
+      <a href="https://github.com/ditadewindita/rumi-mobile/graphs/contributors">Github Repo</a>
+      <a>|</a>
+      <a href="https://rumi-app.herokuapp.com">Project Website</a>
+
+    </div>
 
 
-      <polymer-tilt reset>
-        <div slot="tilt" class="tilt">
-          <div class="card">
-            <h2>Battleship</h2>
-            <div class="card">
-                <img src="../images/Screen Shot 2018-04-06 at 12.33.36 PM.png" data-id="Battleship1">
-                <p></p>
-                <img src="../images/Screen Shot 2018-04-06 at 12.33.53 PM.png" data-id="Battleship2">
-            </div>
-            <p>
-              A recreation of the Battleship Game using Java. Built for myself as a learning exercise to 
-              practice Java and get familiar with  build a GUI with Java AWT (Abstract Window Toolkit).
-            </p>
-          </div>
-        </div>
-      </polymer-tilt>
 
-    <polymer-tilt reset>
-      <div slot="tilt" class="tilt">
-        <div class="card">
-          <h2>Vigenere Cipher Block Chaining</h2>
-          <p>The program reads in a block of text, and encrypts the data using the
-            Vigenere cipher under the Block Chaining mode of operation.
-            The user must also provide a password/salt key and initalization vectors as command line arguments, for the program to work.
-          </p>
-          <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Link to project on Github </a>
-        </div>
+
+    <div class="card">
+      <h2>Battleship</h2>
+      <div class="card">
+          <img src="../images/Screen Shot 2018-04-06 at 12.33.36 PM.png" data-id="Battleship1">
+          <p></p>
+          <img src="../images/Screen Shot 2018-04-06 at 12.33.53 PM.png" data-id="Battleship2">
       </div>
-    </polymer-tilt>
+      <p>
+        A recreation of the Battleship Game using Java. Built as a learning exercise to 
+        learn Java and get familiar with builing a GUI with Java Abstract Window Toolkit (AWT).
+      </p>
+
+      <a href="https://github.com/subhashnaidu/BattleshipGame">Github Repo</a>
+    </div>
 
 
-    <polymer-tilt reset>
-      <div slot="tilt" class="tilt">
-        <div class="card">
-          <h2 class="card-title">Polymer Website</h2>
-          <div class="card"><img src="../src/p-logo.png" data-id="Polymer"></div>
-          <p class="card-text">This website was created using a combination of 
-            Google's Polymer Framework and Web Components. This website seamlessly
-            transitions between mobile and desktop views. Try it by resizing the
-            browser window to create a narrow rectangle much like a phone screen, or
-            visit the website on a phone and watch the website adapt.
-        </p></div>
-      </div>
-    </polymer-tilt>
+    <div class="card">
+      <h2>Vigenere Cipher Block Chaining</h2>
+      <p>The program reads in a block of text, and encrypts the data using the
+        Vigenere cipher under the Block Chaining mode of operation.
+      </p>
+      <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Github Repo </a>
+    </div>
 
+    <div class="card">
+      <!-- <paper-ripple></paper-ripple> -->
+      <h2>Personal Contact Manager</h2>
+      <div class="card"><img src="../src/m2.png" data-id="Mean Stack"></div>
+        <p> A personal contact manager application built by me and my peers using the MEAN stack as part of a group project. It includes basic functionality such as add, delete, and search
+            as well as user registration and login. Responsible for frontend UI using Angular as well as database setup using MongoDB.
+        </p>
+      <a href="https://personal-contact-manager.herokuapp.com/"> Test Me! </a>
+      <a>|</a>
+      <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Github Repo </a>
+    </div>
 
-
+    <div class="card">
+      <h2 class="card-title">Polymer Website</h2>
+      <div class="card"><img src="../src/p-logo.png" data-id="Polymer"></div>
+      <p class="card-text">This website was created using Google's Polymer Framework and Web Components. 
+        A great modern development stack that has a lot of potential.
+    </p>
+  </div>
   </template>
+
+
   <script>
     class MyView1 extends Polymer.Element {
       static get is() { return 'my-view1'; }

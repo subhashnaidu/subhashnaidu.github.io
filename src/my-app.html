@@ -24,7 +24,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="my-icons.html">
 
 
-
 <link rel="lazy-import" href="my-view1.html">
 <link rel="lazy-import" href="my-view2.html">
 <link rel="lazy-import" href="my-view3.html">
@@ -37,8 +36,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         --app-primary-color: #070707;
         --app-secondary-color: #A7CCED;
 
-        display: block;
+        display:flex;
       } 
+
+      iron-pages {
+        margin-right: 1%;
+        max-width: 1200px;
+        align-self:center;
+        align-content:center;
+      }
 
       paper-ripple {
         color: #070707;
@@ -50,10 +56,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       app-header {
-        display: flow-root;
         text-align: center;
+        align-content: center;
         color: #fff;
+        align-items: center;
         background-color: var(--app-primary-color);
+      }
+
+      app-toolbar {
+        align-content: center;
+
       }
 
       app-header paper-icon-button {
@@ -85,19 +97,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       main-title{
-        font-size: 50px;
+        font-size: 45px;
         font-family: 'Scope One', serif;
         font-size-adjust: auto;
         text-align: center;
+        align-content: center;
       }
 
       b{
         font-size: 50px;
         font-family: 'Lato', sans-serif;
-      }
-      
-      app-drawer{
-        background-color: #070707;
       }
 
     </style>
@@ -119,11 +128,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </app-drawer>
 
       <!-- Main content -->
-      <app-header-layout has-scrolling-region="false">
-        <app-header slot="header" style="height: 70px" condenses="true" fixed="false" reveals="true" effects="waterfall">
+      <app-header-layout>
+        <app-header slot="header" style="height: 70px" has-scrolling-region="false">
           <app-toolbar style="height: 70px">
             <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-            <main-title>Subhash Naidu</main-title>
+
+            <main-title title="Subhash Naidu">Subhash Naidu</main-title>
           </app-toolbar>
         </app-header>
 
