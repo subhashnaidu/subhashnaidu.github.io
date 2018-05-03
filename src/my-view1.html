@@ -26,63 +26,73 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           height: auto;
           width: auto; /* ie8 */
       }
-
-      .card{
-        max-width: 1000px;
+      
+      .centered-container {
+          margin-top: 40px;
+          max-width: 1200px;
+          margin: 20px auto;
       }
+
+      ul {
+          padding: 0;
+          list-style: none;
+        }
 
     </style>
 
-    <div class="card">
-      <h2>Rumi</h2>
-      <div class="card">
-        <p></p>
-        <img src="../src/dashboard.png">
-      </div>
-      <p>
-        Rumi is an app that lets users record and split individual items with their roomates. By leveraging Google's OCR libary the app has the ability
-        to scan receipts and parse relevant information for items.
-      </p>
-
-      <a href="https://github.com/ditadewindita/rumi-mobile/graphs/contributors">Github Repo</a>
-      <a>|</a>
-      <a href="https://rumi-app.herokuapp.com">Project Website</a>
-
-    </div>
-
-    <div class="card">
-      <h2>Battleship</h2>
-      <div class="card">
-          <img src="../images/Screen Shot 2018-04-06 at 12.33.36 PM.png" data-id="Battleship1">
-          <p></p>
-          <img src="../images/Screen Shot 2018-04-06 at 12.33.53 PM.png" data-id="Battleship2">
-      </div>
-      <p>
-        A recreation of the Battleship Game using Java and Java Abstract Window Toolkit (AWT).
-      </p>
-
-      <a href="https://github.com/subhashnaidu/BattleshipGame">Github Repo</a>
-    </div>
-
-
-    <div class="card">
-      <h2>Vigenere Cipher Block Chaining</h2>
-      <p>A cryptographic encoding algorithm that reads in a block of text, and encrypts the data using the
-        Vigenere cipher under the Block Chaining mode of operation.
-      </p>
-      <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Github Repo </a>
-    </div>
-
-    <div class="card">
-      <!-- <paper-ripple></paper-ripple> -->
-      <h2>Personal Contact Manager</h2>
-      <div class="card"><img src="../src/m2.png" data-id="Mean Stack"></div>
-        <p> A personal contact manager application built by me and my team using the MEAN stack. Includes functionality such as add, delete, and search
-            as well as user registration and login.
-        </p>
-      <a href="https://personal-contact-manager.herokuapp.com/"> Test Me! </a>
-      <a>|</a>
-      <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Github Repo </a>
+    <div class="centered-container">
+      <ul class="app-grid">
+        <div class="card">
+          <h2>Rumi</h2>
+            <div class="card">
+              <p></p>
+              <img src="../src/dashboard.png">
+            </div>
+            <p>
+              Rumi is an app that lets users record and split individual items with their roomates. By leveraging Google's OCR libary the app has the ability
+              to scan receipts and parse relevant information for items.
+            </p>
+    
+          <a href="https://github.com/ditadewindita/rumi-mobile/graphs/contributors">Github Repo</a>
+          <a>|</a>
+          <a href="https://rumi-app.herokuapp.com">Project Website</a>
+        </div>
+      
+        <div class="card">
+          <h2>Battleship</h2>
+          <div class="card">
+              <img src="../images/Screen Shot 2018-04-06 at 12.33.36 PM.png" data-id="Battleship1">
+              <p></p>
+              <img src="../images/Screen Shot 2018-04-06 at 12.33.53 PM.png" data-id="Battleship2">
+          </div>
+          <p>
+            A recreation of the Battleship Game using Java and Java Abstract Window Toolkit (AWT).
+          </p>
+    
+          <a href="https://github.com/subhashnaidu/BattleshipGame">Github Repo</a>
+        </div>
+    
+    
+        <div class="card">
+          <h2>Vigenere Cipher Block Chaining</h2>
+          <p>A cryptographic encoding algorithm that reads in a block of text, and encrypts the data using the
+            Vigenere cipher under the Block Chaining mode of operation.
+          </p>
+          <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Github Repo </a>
+        </div>
+    
+        <div class="card">
+          <!-- <paper-ripple></paper-ripple> -->
+          <h2>Personal Contact Manager</h2>
+          <div class="card"><img src="../src/m2.png" data-id="Mean Stack"></div>
+            <p> A personal contact manager application built by me and my team using the MEAN stack. Includes functionality such as add, delete, and search
+                as well as user registration and login.
+            </p>
+          <a href="https://personal-contact-manager.herokuapp.com/"> Test Me! </a>
+          <a>|</a>
+          <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Github Repo </a>
+        </div>
+      </ul>
     </div>
 
   </template>

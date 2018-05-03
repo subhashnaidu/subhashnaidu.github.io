@@ -1,0 +1,40 @@
+{
+  "name": "app-grid",
+  "homepage": "https://github.com/angiolep/app-grid",
+  "authors": [
+    "Paolo Angioletti <paolo.angioletti@gmail.com>"
+  ],
+  "description": "A web-component grid layout of filterable items.",
+  "main": "app-grid.html",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "web-components"
+  ],
+  "license": "http://unlicense.org",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "demo"
+  ],
+  "dependencies": {
+    "polymer": "~1.2.3",
+    "iron-resizable-behavior": "PolymerElements/iron-resizable-behavior#^1.0.2"
+  },
+  "devDependencies": {
+    "web-component-tester": "~4.1.0",
+    "iron-component-page": "PolymerElements/iron-component-page#~1.1.4"
+  },
+  "version": "0.1.0",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.0",
+    "commit": "b364b5576ec0b9abe77e638f5b07273636831703"
+  },
+  "_source": "https://github.com/angiolep/app-grid.git",
+  "_target": "^0.1.0",
+  "_originalSource": "app-grid",
+  "_direct": true
+}
