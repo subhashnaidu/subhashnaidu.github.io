@@ -37,8 +37,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </div>
       <p>
         Rumi is an app that lets users record and split individual items with their roomates. By leveraging Google's OCR libary the app has the ability
-        to scan recipts. It features integration with venmo, and allows users to easily send and request payments directly in the app, letting
-        roommates, partners or friends split things that they bought.
+        to scan receipts and parse relevant information for items.
       </p>
 
       <a href="https://github.com/ditadewindita/rumi-mobile/graphs/contributors">Github Repo</a>
@@ -46,9 +45,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <a href="https://rumi-app.herokuapp.com">Project Website</a>
 
     </div>
-
-
-
 
     <div class="card">
       <h2>Battleship</h2>
@@ -58,8 +54,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <img src="../images/Screen Shot 2018-04-06 at 12.33.53 PM.png" data-id="Battleship2">
       </div>
       <p>
-        A recreation of the Battleship Game using Java. Built as a learning exercise to 
-        learn Java and get familiar with builing a GUI with Java Abstract Window Toolkit (AWT).
+        A recreation of the Battleship Game using Java and Java Abstract Window Toolkit (AWT).
       </p>
 
       <a href="https://github.com/subhashnaidu/BattleshipGame">Github Repo</a>
@@ -68,7 +63,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <div class="card">
       <h2>Vigenere Cipher Block Chaining</h2>
-      <p>The program reads in a block of text, and encrypts the data using the
+      <p>A cryptographic encoding algorithm that reads in a block of text, and encrypts the data using the
         Vigenere cipher under the Block Chaining mode of operation.
       </p>
       <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Github Repo </a>
@@ -78,21 +73,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <!-- <paper-ripple></paper-ripple> -->
       <h2>Personal Contact Manager</h2>
       <div class="card"><img src="../src/m2.png" data-id="Mean Stack"></div>
-        <p> A personal contact manager application built by me and my peers using the MEAN stack as part of a group project. It includes basic functionality such as add, delete, and search
-            as well as user registration and login. Responsible for frontend UI using Angular as well as database setup using MongoDB.
+        <p> A personal contact manager application built by me and my team using the MEAN stack. Includes functionality such as add, delete, and search
+            as well as user registration and login.
         </p>
       <a href="https://personal-contact-manager.herokuapp.com/"> Test Me! </a>
       <a>|</a>
       <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Github Repo </a>
     </div>
 
-    <div class="card">
-      <h2 class="card-title">Polymer Website</h2>
-      <div class="card"><img src="../src/p-logo.png" data-id="Polymer"></div>
-      <p class="card-text">This website was created using Google's Polymer Framework and Web Components. 
-        A great modern development stack that has a lot of potential.
-    </p>
-  </div>
   </template>
 
 
@@ -103,25 +91,5 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     window.customElements.define(MyView1.is, MyView1);
   </script>
-
-  <script>
-      suite('polymer-tilt', function() {
-        test('instantiating the element with default properties works', function() {
-          var element = fixture('BasicTestFixture');
-          assert.equal(element.prop1, 'polymer-tilt');
-          var elementShadowRoot = element.shadowRoot;
-          var elementHeader = elementShadowRoot.querySelector('h2');
-          assert.equal(elementHeader.innerHTML, 'Hello polymer-tilt!');
-        });
-        test('setting a property on the element works', function() {
-          // Create a test fixture
-          var element = fixture('ChangedPropertyTestFixture');
-          assert.equal(element.prop1, 'new-prop1');
-          var elementShadowRoot = element.shadowRoot;
-          var elementHeader = elementShadowRoot.querySelector('h2');
-          assert.equal(elementHeader.innerHTML, 'Hello new-prop1!');
-        });
-      });
-    </script>
 
 </dom-module>

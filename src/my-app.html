@@ -33,25 +33,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style>
       :host {
-        --app-primary-color: #070707;
-        --app-secondary-color: #A7CCED;
-
+        --app-primary-color: #40688A;
         display:flex;
       } 
 
       iron-pages {
-        margin-right: 1%;
-        max-width: 1200px;
-        align-self:center;
-        align-content:center;
+        max-width: 1000px;
       }
 
       paper-ripple {
-        color: #070707;
+        color: #23394C;
       }
 
       app-drawer-layout:not([narrow]) [drawer-toggle] {
         text-align: center;
+        align-content:center;
+        align-self: center;
+        align-items: center;
         display: none;
       }
 
@@ -76,7 +74,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: flex;
         padding: 0 30px;
         text-align: center;
-        line-height: 70px;
+        line-height: 80px;
         font-size: 30px;
         font-weight: 200;
         font-family: 'Scope One', serif;
@@ -86,9 +84,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .drawer-list a.iron-selected {
-        color: black;
-        background-color: rgb(211, 211, 211);
-        background-blend-mode: color;
+        color: white;
+        background-color: #F9978B;
         font-size: 35px;
         font-weight:900;
         text-align: center;
@@ -96,12 +93,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         /* font-family: 'Courier New', Courier, monospace; */
       }
 
+      app-drawer{
+        align-content: center;
+        align-self: center;
+        align-items: center;
+      }
+
       main-title{
         font-size: 45px;
         font-family: 'Scope One', serif;
-        font-size-adjust: auto;
-        text-align: center;
-        align-content: center;
+        align-content:center;
+        margin-left: 25px;
       }
 
       b{
@@ -116,7 +118,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <app-drawer-layout fullbleed="">
       <!-- Drawer content -->
-      <app-drawer id="drawer" slot="drawer">
+      <app-drawer id="drawer" slot="drawer" swipe-open>
         <!-- <app-toolbar style="height: 100px"><b></b></app-toolbar> -->
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="view1" href="view1" style="text-decoration: none">Portfolio</a>
@@ -129,10 +131,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       <!-- Main content -->
       <app-header-layout>
-        <app-header slot="header" style="height: 70px" has-scrolling-region="false">
-          <app-toolbar style="height: 70px">
+        <app-header slot="header" style="height: 80px" has-scrolling-region="false">
+          <app-toolbar style="height: 80px">
+            <paper-ripple></paper-ripple>
             <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-
             <main-title title="Subhash Naidu">Subhash Naidu</main-title>
           </app-toolbar>
         </app-header>
