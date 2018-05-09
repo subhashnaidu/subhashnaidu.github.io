@@ -11,14 +11,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/paper-ripple/paper-ripple.html">
 
 
+
 <dom-module id="my-view2">
   <template>
     <style include="shared-styles">
       :host {
-        display: -ms-grid;
-        text-align: center;
         position: center;
-        size: 100,100;
         max-width: 80%;
       }
 
@@ -26,29 +24,71 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: #FF80AB;
       } */
 
-      img {
-          max-width: 100%;
+      .img {
+          margin: 20px auto;
+          max-width: 50%;
           height: auto;
           width: auto; /* ie8 */
       }
       
       .card{
         margin-top: 50px;
-        max-width: 1000px;
+        max-width: 500px;
         margin: 20px auto;
+        /* text-align: center; */
       }
 
+      .centered-container {
+        margin-top: 40px;
+        max-width: 1000px;
+        margin: 20px auto;
+        align-content: initial;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      li{
+        font-size: 20px;
+      }
+
+      @media(max-width:600px)
+      {
+        li{
+          font-size: 16px;
+        }
+      }
 
     </style>
 
     <div class="card">
-      <img src="../src/me_2.png" data-id="Me">
-      <p>
-          I am currently a Computer Science Student at the University of Central Florida.
-          I came to America when I was 7 and I was instantly fascinated with the technology here.
+
+      <div class="image-container">
+          <img src="../src/me_2.png" data-id="Me">
+      </div>
+
+
+      <div class="card" style="max-width: 500px; ">
+        <div class="centered-container">
+          <ul style="list-style-position:inside">
+            <li>Certified Mouse Potato</li>
+            <li>Indian born, American raised</li>
+            <li>Music producer by night, listener by day</li>
+            <li>LaCroix > water</li>
+          </ul>
+        </div>
+
+      </div>
+            
+      <!-- <p>
+          I am currently studying Computer Science Student at the University of Central Florida.
+          I was born in India and came to America when I was 7. I was instantly fascinated with the technology here.
           My curiosity in technology lead me to my eventual career path as a software developer.
           I love being informed on current trends in technology and I am constantly in the process of learning new things.
-        </p>
+          
+      </p> -->
     </div>
 
   </template>

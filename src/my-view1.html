@@ -18,31 +18,147 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-align: center;
         position: center;
         font-family: Arial, Helvetica, sans-serif;
-        display: list-item;
+        display: flex;
+      }
+
+      .card {
+        max-width: 600px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+
+        padding: 20px;
+        align-self: center;
+        align-content: center;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+        animation-name: bounceIn;
+        animation-duration: .75s;
       }
 
       img {
           max-width: 100%;
           height: auto;
-          width: auto; /* ie8 */
+          width: auto;
       }
       
-      .centered-container {
+      /* .centered-container {
           margin-top: 40px;
           max-width: 1200px;
           margin: 20px auto;
+          display: flex;
       }
 
-      ul {
+      .app-grid {
+          flex: 50%;
           padding: 0;
           list-style: none;
+        } */
+
+      .row{
+        display: flex;
+      }
+      
+      .col{
+        flex: 100%;
+      }
+      
+      @media (max-width: 600px)
+      {
+        .card{
+          margin: 30px;
+          padding: 5px;
         }
+
+        .row{
+          display: list-item;
+        }
+
+        h2{
+          font-size: 28px;
+        }
+      }
 
     </style>
 
-    <div class="centered-container">
-      <ul class="app-grid">
+    <div class="row">
+      <div class="col">
+
         <div class="card">
+          <h2>Rumi</h2>
+            <div class="card">
+              <p></p>
+              <img src="../src/dashboard.png">
+            </div>
+            <p>
+              Rumi is an app that lets users record and split individual items with their roomates. By leveraging Google's OCR libary the app has the ability
+              to scan receipts and parse relevant information for items.
+            </p>
+          <a href="https://github.com/ditadewindita/rumi-mobile/graphs/contributors">Github Repo</a>
+          <a>|</a>
+          <a href="https://rumi-app.herokuapp.com">Project Website</a>
+        </div>
+
+        <div class="card">
+          <!-- <paper-ripple></paper-ripple> -->
+          <h2>Personal Contact Manager</h2>
+          <div class="card"><img src="../src/m2.png" data-id="Mean Stack"></div>
+            <p> A personal contact manager application built by me and my team using the MEAN stack. Includes functionality such as add, delete, and search
+                as well as user registration and login.
+            </p>
+          <a href="https://personal-contact-manager.herokuapp.com/"> Test Me! </a>
+          <a>|</a>
+          <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Github Repo </a>
+        </div>
+
+      </div>
+      <div class="col">
+
+        <div class="card">
+          <h2>ASL Numbers Classifier</h2>
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/449px-Tensorflow_logo.svg.png">
+          </div>
+          <p>
+            A retrained Inception-V3 model with an additional classification layer that has the ability to classify digits in American Sign Language.
+            Using a Machine Learning technique called transfer learning, negated the need to use larger amounts of training data, and computing power.
+            I was able to train this classifier in under an hour using a 2017 15in Macbook Pro without cuda enabled.
+
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Battleship</h2>
+          <div class="card">
+              <img src="../images/Screen Shot 2018-04-06 at 12.33.36 PM.png" data-id="Battleship1">
+              <p></p>
+              <img src="../images/Screen Shot 2018-04-06 at 12.33.53 PM.png" data-id="Battleship2">
+          </div>
+          <p>
+            A recreation of the Battleship Game using Java and Java Abstract Window Toolkit (AWT).
+          </p>
+          <a href="https://github.com/subhashnaidu/BattleshipGame">Github Repo</a>
+        </div>
+
+        <div class="card">
+          <h2>Vigenere Cipher Block Chaining</h2>
+          <p>A cryptographic encoding algorithm that reads in a block of text, and encrypts the data using the
+            Vigenere cipher under the Block Chaining mode of operation.
+          </p>
+          <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Github Repo </a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- <div class="centered-container">
+      <ul class="app-grid">
+        <!-- <div class="card">
           <h2>Rumi</h2>
             <div class="card">
               <p></p>
@@ -57,8 +173,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a>|</a>
           <a href="https://rumi-app.herokuapp.com">Project Website</a>
         </div>
-      
-        <div class="card">
+       -->
+        <!-- <div class="card">
           <h2>Battleship</h2>
           <div class="card">
               <img src="../images/Screen Shot 2018-04-06 at 12.33.36 PM.png" data-id="Battleship1">
@@ -70,30 +186,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </p>
     
           <a href="https://github.com/subhashnaidu/BattleshipGame">Github Repo</a>
-        </div>
+        </div> -->
     
     
-        <div class="card">
-          <h2>Vigenere Cipher Block Chaining</h2>
-          <p>A cryptographic encoding algorithm that reads in a block of text, and encrypts the data using the
-            Vigenere cipher under the Block Chaining mode of operation.
-          </p>
-          <a href="https://github.com/subhashnaidu/Vigenere-Cipher"> Github Repo </a>
-        </div>
+<!--         
     
-        <div class="card">
-          <!-- <paper-ripple></paper-ripple> -->
-          <h2>Personal Contact Manager</h2>
-          <div class="card"><img src="../src/m2.png" data-id="Mean Stack"></div>
-            <p> A personal contact manager application built by me and my team using the MEAN stack. Includes functionality such as add, delete, and search
-                as well as user registration and login.
-            </p>
-          <a href="https://personal-contact-manager.herokuapp.com/"> Test Me! </a>
-          <a>|</a>
-          <a href="https://github.com/JoshuaSylvestre/Personal-Contact-Manager"> Github Repo </a>
-        </div>
+        
       </ul>
-    </div>
+    </div> -->
 
   </template>
 
