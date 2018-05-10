@@ -25,10 +25,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       } */
 
       .img {
-          margin: 20px auto;
-          max-width: 50%;
+          display: block;
+          max-width: 100%;
           height: auto;
-          width: auto; /* ie8 */
+          width: 100%; /* ie8 */
       }
       
       .card{
@@ -56,12 +56,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       @media (max-width: 600px)
       {
         .card{
-          margin: 30px;
+          margin: 5px;
           padding: 5px;
         }
 
         li{
           font-size: 16px;
+        }
+
+        img
+        {
+
         }
       }
 
@@ -70,7 +75,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="card">
 
       <div class="image-container">
-          <img src="../src/me_2.png" data-id="Me">
+          <img src="../images/profile.png" data-id="Me">
       </div>
 
 
