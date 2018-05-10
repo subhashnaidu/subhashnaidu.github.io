@@ -33,12 +33,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style>
       :host {
-        --app-primary-color: rgba(53, 100, 141, 0.918);
+        --app-primary-color: rgba(85, 188, 166, 0.979);
         display:flex;
       } 
 
       paper-ripple {
-        color: #F9978B;
+        color: rgb(0, 0, 0);
       }
 
       app-drawer-layout:not([narrow]) [drawer-toggle] {
@@ -52,8 +52,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app-header {
         text-align: center;
         align-content: center;
-        color: #fff;
+        color:black;
         align-items: center;
+        
         background-color: var(--app-primary-color);
       }
 
@@ -62,9 +63,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       }
 
-      app-header paper-icon-button {
+      /* app-header paper-icon-button {
         --paper-icon-button-ink-color: white;
-      }
+      } */
 
       .drawer-list a {
         display: flex;
@@ -74,18 +75,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         font-size: 28px;
         font-family: 'Source Sans Pro', sans-serif;
         color: black;
-        /* font-family:'Courier New', Courier, monospace; */
         font-weight: normal;
       }
 
       .drawer-list a.iron-selected {
         color: white;
-        background-color: #e65d27;
+        background-color: rgb(32,33,36);
         font-size: 32px;
         font-weight:500;
         text-align: center;
         font-family: 'Source Sans Pro', sans-serif;
-        /* font-family: 'Courier New', Courier, monospace; */
       }
 
       app-drawer{
@@ -93,12 +92,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         align-self: center;
         align-items: center;
         --app-drawer-content-container: {
-          box-shadow: 1px 0 2px 2px rgba(0,0,0,0.18);
+          box-shadow: 1px 0 2px 3px rgba(0,0,0,0.18);
         }
       }
 
       .main-title{
-        font-size: 46px;
+        font-size: 48px;
         font-weight: 400;
         font-family: 'IBM Plex Sans', sans-serif;
         align-content:center;
@@ -122,8 +121,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         .drawer-list a.iron-selected {
           font-size: 30px;
           color: white;
-          background-color: #e65d27;
-          font-weight:900;
+          background-color: rgb(32,33,36);
+          font-weight:400;
           text-align: center;
           font-family: 'Source Sans Pro', sans-serif;
         }
@@ -139,9 +138,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <!-- Drawer content -->
       <app-drawer id="drawer" slot="drawer" swipe-open>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-          <a name="view1" href="view1" style="text-decoration: none">Portfolio</a>
-          <a name="view4" href="view4" style="text-decoration: none">Resume</a>
           <a name="view2" href="view2" style="text-decoration: none">About Me</a>
+          <a name="view4" href="view4" style="text-decoration: none">Resume</a>
+          <a name="view1" href="view1" style="text-decoration: none">Portfolio</a>
           <a name="view3" href="view3" style="text-decoration: none">Contact Me</a>
         </iron-selector>
         <paper-ripple></paper-ripple>
