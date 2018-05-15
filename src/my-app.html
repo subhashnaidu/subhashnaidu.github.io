@@ -23,6 +23,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer-tilt/polymer-tilt.html">
 <link rel="import" href="my-icons.html">
 
+<link rel="stylesheet" href="../src/animations.css"
 
 <link rel="lazy-import" href="my-view1.html">
 <link rel="lazy-import" href="my-view2.html">
@@ -33,10 +34,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style>
       :host {
-        --app-primary-color: rgba(85, 188, 166, 0.979);
-        --app-secondary-color:  rgb(32,33,36);
+        --app-primary-color: white;
+        --app-secondary-color:  rgb(8, 8, 8);
         display:flex;
       } 
+
+      @keyframes titleAnimation{
+
+      }
 
       paper-ripple {
         color: var(--app-secondary-color);
@@ -56,6 +61,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: var(--app-secondary-color);
         align-items: center;
         background-color: var(--app-primary-color);
+        box-shadow: 1px 0 5px 5px rgba(0,0,0,0.18);
       }
 
       app-toolbar {
@@ -69,47 +75,44 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .drawer-list a {
         display: flex;
         padding: 0 30px;
-        text-align: center;
         line-height: 70px;
         font-size: 28px;
-        font-family: 'Source Sans Pro', sans-serif;
-        color: var(--app-secondary-color);
-        font-weight: normal;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: black;
       }
 
       .drawer-list a.iron-selected {
-        color: white;
-        background-color: var(--app-secondary-color);
-        font-size: 32px;
-        font-weight:500;
-        text-align: center;
-        font-family: 'Source Sans Pro', sans-serif;
+        color: black;
+        background-color: #ebb96f;
       }
 
       app-drawer{
-        align-content: center;
-        align-self: center;
-        align-items: center;
-        --app-drawer-content-container: {
-          box-shadow: 1px 0 2px 3px rgba(0,0,0,0.18);
+          align-content: center;
+          align-self: center;
+          align-items: center;
+          --app-drawer-content-container: {
+          box-shadow: 1px 0 5px 5px rgba(0,0,0,0.18);
         }
       }
 
       .main-title{
-        font-size: 48px;
+        font-size: 50px;
         font-weight: 400;
-        font-family: 'IBM Plex Sans', sans-serif;
+        margin-left: 130px;
+        font-family: 'Roboto', sans-serif;
         align-content:center;
       }
 
       b{
         font-size: 50px;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Roboto', sans-serif;
       }
 
-      @media (max-width: 500px){
+      @media (max-width: 800px){
         .main-title{
           font-size: 30px;
+          margin-left: 0px;
         }
 
         .card{
@@ -118,14 +121,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
 
         .drawer-list a.iron-selected {
-          font-size: 30px;
-          color: white;
-          background-color: var(--app-secondary-color);
-          font-weight:400;
+          background-color: #ebb96f;
           text-align: center;
-          font-family: 'Source Sans Pro', sans-serif;
         }
-
       }
 
     </style>
@@ -137,9 +135,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <!-- Drawer content -->
       <app-drawer id="drawer" slot="drawer" swipe-open>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
+          <a name="view1" href="view1" style="text-decoration: none">Portfolio</a>         
           <a name="view2" href="view2" style="text-decoration: none">About Me</a>
           <a name="view4" href="view4" style="text-decoration: none">Resume</a>
-          <a name="view1" href="view1" style="text-decoration: none">Portfolio</a>
           <a name="view3" href="view3" style="text-decoration: none">Contact Me</a>
         </iron-selector>
         <paper-ripple></paper-ripple>

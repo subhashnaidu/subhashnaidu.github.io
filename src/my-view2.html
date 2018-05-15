@@ -20,6 +20,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         max-width: 80%;
       }
 
+      @keyframes slideRight {
+        0% {
+          transform: translateX(-200%);
+        }			
+        100% {
+          transform: translateX(0%);
+        }	
+      }
+
       /* paper-ripple {
         color: #FF80AB;
       } */
@@ -34,6 +43,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .card{
         max-width: 500px;
         margin: 20px auto;
+        animation: slideRight;
+        animation-duration: .75s;
         /* text-align: center; */
       }
 
@@ -49,16 +60,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         justify-content: center;
       }
 
-      li{
-        font-size: 18px;
-        font-family: 'Open Sans', sans-serif;
-
-      }
       
       @media (max-width: 600px)
       {
         .card{
-          margin: 10px;
+          margin: 10px auto;
           padding: 5px;
         }
 
@@ -71,9 +77,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           width: 80%;
           height: 80%;
         }
-
-
-
       }
 
     </style>
@@ -90,8 +93,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <ul style="list-style-position:inside">
             <li>Certified Mouse Potato</li>
             <li>Indian born, American raised</li>
-            <li>Music producer by night, listener by day</li>
-            <li>LaCroix > water</li>
+            <li>Music listener by day, Producer by night</li>
+            <li>LaCroix > Water</li>
           </ul>
         </div>
 
