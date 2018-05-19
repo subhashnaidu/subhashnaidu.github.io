@@ -23,8 +23,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer-tilt/polymer-tilt.html">
 <link rel="import" href="my-icons.html">
 
-<link rel="stylesheet" href="../src/animations.css"
-
 <link rel="lazy-import" href="my-view1.html">
 <link rel="lazy-import" href="my-view2.html">
 <link rel="lazy-import" href="my-view3.html">
@@ -97,11 +95,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .main-title{
-        font-size: 50px;
-        font-weight: 400;
-        margin-left: 130px;
+        font-size: 48px;
+        font-weight: 500;
+        margin-left: 120px;
         font-family: 'Roboto', sans-serif;
-        align-content:center;
+
+        /* font-family: 'Roboto Mono', monospace; */
+        
       }
 
       b{
@@ -120,6 +120,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           margin: 5px;
         }
 
+        .drawer-list a {
+          line-height: 70px;
+          font-size: 24px;
+          font-weight: 300;
+        }
+
         .drawer-list a.iron-selected {
           background-color: #ebb96f;
           text-align: center;
@@ -131,7 +137,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <app-location route="{{route}}"></app-location>
     <app-route route="{{route}}" pattern="[[rootPattern]]:page" data="{{routeData}}" tail="{{subroute}}"></app-route>
 
-    <app-drawer-layout fullbleed="true" responsive-width="1280px">
+    <app-drawer-layout fullbleed="true" responsive-width="1200px">
       <!-- Drawer content -->
       <app-drawer id="drawer" slot="drawer" swipe-open>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
