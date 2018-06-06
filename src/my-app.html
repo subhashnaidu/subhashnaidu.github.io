@@ -34,6 +34,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       :host {
         --app-primary-color: white;
         --app-secondary-color:  rgb(8, 8, 8);
+        --app-alter-color: rgba(225, 93, 49, 0.849);
         display:flex;
       } 
 
@@ -42,7 +43,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       paper-ripple {
-        color: var(--app-secondary-color);
+        color: rgb(225,92,49);
       }
 
       app-drawer-layout:not([narrow]) [drawer-toggle] {
@@ -56,10 +57,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app-header {
         text-align: center;
         align-content: center;
-        color: var(--app-secondary-color);
+        color: black;
         align-items: center;
         background-color: var(--app-primary-color);
-        box-shadow: 1px 0 5px 5px rgba(0,0,0,0.18);
+        box-shadow: 1px 0 10px 10px rgba(0,0,0,0.18);
       }
 
       app-toolbar {
@@ -82,15 +83,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       .drawer-list a.iron-selected {
         color: black;
-        background-color: #ebb96f;
+        background-color: var(--app-alter-color);
       }
 
       app-drawer{
-          align-content: center;
-          align-self: center;
-          align-items: center;
-          --app-drawer-content-container: {
-          box-shadow: 1px 0 5px 5px rgba(0,0,0,0.18);
+        align-content: center;
+        align-self: center;
+        align-items: center;
+        --app-drawer-content-container: {
+          box-shadow: 1px 0 3px 3px rgba(0,0,0,0.18);
         }
       }
 
@@ -127,7 +128,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
 
         .drawer-list a.iron-selected {
-          background-color: #ebb96f;
+          background-color: var(--app-alter-color);
           text-align: center;
         }
       }
