@@ -32,9 +32,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style>
       :host {
-        --app-primary-color: white;
+        --app-primary-color: rgb(255, 255, 255);
         --app-secondary-color:  rgb(8, 8, 8);
-        --app-alter-color: rgba(225, 93, 49, 0.849);
+        --app-alter-color: rgb(88, 108, 196);
         display:flex;
       } 
 
@@ -60,7 +60,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: black;
         align-items: center;
         background-color: var(--app-primary-color);
-        box-shadow: 1px 0 10px 10px rgba(0,0,0,0.18);
+        box-shadow: 1px 0 10px 20px rgba(0,0,0,0.18);
       }
 
       app-toolbar {
@@ -82,7 +82,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .drawer-list a.iron-selected {
-        color: black;
+        color: white;
         background-color: var(--app-alter-color);
       }
 
@@ -127,7 +127,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           font-weight: 300;
         }
 
-        .drawer-list a.iron-selected {
+        .drawer-list a.iron-selected 
+        {
+          color: white;
           background-color: var(--app-alter-color);
           text-align: center;
         }
