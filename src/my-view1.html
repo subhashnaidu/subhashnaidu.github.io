@@ -33,7 +33,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         align-content: center;
         border-radius: 10px;
         background-color: rgba(255, 255, 255, 0.788);
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 0 5px 5px rgba(0,0,0,0.18);
+
+        /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); */
 
         animation-name: bounceIn;
         animation-duration: .75s;
@@ -66,6 +68,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .col{
         flex: 100%;
       }
+
+      @media (max-width: 1000px)
+      {
+        .row{
+          display: list-item;
+        }
+
+      }
       
       @media (max-width: 600px)
       {
@@ -87,6 +97,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <div class="row">
       <div class="col">
+
+          <div class="card">
+              <h2>AI Pac-Man</h2>
+                <div class="card" style="padding: 40px">
+                  <img src="../src/pacman.png">
+                </div>
+                <p>
+                  Pac-Man controlled by an Adversarial Search Algorithm. A depth-limited minimax adversarial search algorithm drives Pac-Man through a maze to collect food dots while avoiding two ghosts in the maze who are trying to eat Pac-Man.   
+                </p>
+              <a href="https://github.com/subhashnaidu/Minimax-Adversarial-Pac-Man-Search">Github Repo</a>
+            </div>
 
         <div class="card">
           <h2>Rumi</h2>
@@ -127,12 +148,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </div>
 
 
-
-
-
       <div class="col">
 
-        <div class="card" style="padding: 40px">
+          <div class="card" style="padding: 30px">
+              <h2>Online Store POS Java Applet</h2>
+              <div class="card">
+                <img src="../src/ebookstore.png">
+              </div>
+              <p>
+                An example of Event-driven programming. Java Applet that allows a user to search for books in an inventory, add them to a shopping cart and calculate totals and generate an invoice. 
+              </p>
+              <a href="https://github.com/subhashnaidu/E-Book_Store"> Github Repo </a>
+            </div>
+
+        <div class="card" style="padding: 30px">
           <h2>ASL Numbers Classifier</h2>
           <div class="card">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/449px-Tensorflow_logo.svg.png">
