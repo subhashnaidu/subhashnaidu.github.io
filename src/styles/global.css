@@ -1,0 +1,57 @@
+/* header {
+	background: linear-gradient(-25deg, #f99273, #78b5ff, #9eff8f, #ff7f51, #dadada);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+} */
+
+header {
+	/* background: linear-gradient(45deg, #a2c2e9, #c2a6d5, #df6680, #e6676b, #eaac8b);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite; */
+	background: rgba(0, 0, 0, 0)
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+	/* background: linear-gradient(45deg, #a2c2e9, #c2a6d5, #df6680, #7570ce, #eaac8b); */
+	background: linear-gradient(45deg, #a2c2e9, #c2a6d5, #80CBC4, #7570ce, #eaac8b, #C5E1A5, #FFAB91, #B0BEC5 );
+
+	background-size: 1000% 1000%;
+	animation: gradient 60s ease infinite;
+	/* background: linear-gradient(90deg, rgb(232, 223, 223) 0%, rgb(207, 214, 215) 100%);
+    animation: gradient 10                     s ease infinite; */
+}
+
+.typewriter h2 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .01em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(30, end),
+	  blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+  }
