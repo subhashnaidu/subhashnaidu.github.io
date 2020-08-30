@@ -38,7 +38,8 @@ export default function IndexPage(props) {
           <div class="typewriter" style={{marginBottom: '25px'}}><Title>Hi! My name is Subhash.</Title></div>
           <Typography>
             <Fade delay={3000}>
-              Welcome to my online portfolio, where I showcase my projects, skills and intrests!<br />
+              Welcome to my online portfolio, where I showcase my projects, skills and intrests!
+              This site is work in progress ;)
               
             </Fade>
           </Typography><br />
