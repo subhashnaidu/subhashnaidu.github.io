@@ -33,11 +33,11 @@ export default function IndexPage(props) {
     <Layout>
       <SEO title="Home" />
       <Fade up>
-        <Card>
+        <Card style={{height: '200px'}}>
           {/* <Fade right><Title class="typewriter">Hi! My name is Subhash.</Title></Fade> */}
           <div class="typewriter" style={{marginBottom: '25px'}}><Title>Hi! My name is Subhash.</Title></div>
           <Typography>
-            <Fade delay={0}>
+            <Fade delay={3000}>
               Welcome to my online portfolio, where I showcase my projects, skills and intrests!<br />
               
             </Fade>
@@ -51,7 +51,7 @@ export default function IndexPage(props) {
         </Card>
       </Fade>
 
-      <Fade delay={3000} up>
+      <Fade delay={2000} up>
         <AboutMe />
         <Divider />
       </Fade>
